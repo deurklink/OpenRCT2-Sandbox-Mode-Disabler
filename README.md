@@ -28,9 +28,12 @@ context.executeAction("cheatset", { type: 0, param1: 0, param2: 0 });
 
 Clients do not need to install this plugin.
 
+As long as `sandbox-mode-disabler.js` is in the server's OpenRCT2 `plugin` directory, sandbox mode cannot be used on that server. To use sandbox mode again, remove or rename the plugin file and restart the server.
+
 ## Notes
 
 - The plugin should be installed on the server or host only.
+- As long as this plugin is in the server's plugin directory, sandbox mode will be turned off automatically.
 - If the file is accidentally installed on a multiplayer client, it detects client mode and does nothing.
 - Other cheats remain unaffected.
 - The server still needs to allow cheat actions generally, since OpenRCT2 currently does not expose separate multiplayer permissions for individual cheats.
